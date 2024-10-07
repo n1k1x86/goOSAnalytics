@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}}</title>
+    <link rel="stylesheet" href="/static/cpu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{.title}}</h1>
+        <div class="info-block">
+            <h2>General Information</h2>
+            <p><strong>Vendor ID:</strong> {{.cpuInfo.VendorID}}</p>
+            <p><strong>Family:</strong> {{.cpuInfo.Family}}</p>
+            <p><strong>Cores:</strong> {{.cpuInfo.Cores}}</p>
+            <p><strong>Model Name:</strong> {{.cpuInfo.ModelName}}</p>
+            <p><strong>Frequency:</strong> {{.cpuInfo.Freq}} MHz</p>
+        </div>
+        <a href="/" class="back-link">Back to Main Page</a>
+    </div>
+</body>
+</html>

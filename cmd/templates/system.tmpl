@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}}</title>
+    <link rel="stylesheet" href="/static/system.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{.title}}</h1>
+        <div class="info-block">
+            <h2>General Information</h2>
+            <p><strong>Host name:</strong> {{.systemInfo.Hostname}}</p>
+            <p><strong>Count of running processes:</strong> {{.systemInfo.RunningProcs}}</p>
+            <p><strong>OS:</strong> {{.systemInfo.OSName}}</p>
+            <p><strong>Platform:</strong> {{.systemInfo.Platform}}</p>
+            <p><strong>Platform family:</strong> {{.systemInfo.PlatformFamily}}</p>
+            <p><strong>Platform version:</strong> {{.systemInfo.PlatformVer}}</p>
+            <p><strong>Kernel version:</strong> {{.systemInfo.KernalVersion}}</p>
+            <p><strong>Kernel arch:</strong> {{.systemInfo.KernelArch}}</p>
+            <p><strong>Host ID:</strong> {{.systemInfo.HostId}}</p>
+        </div>
+        <a href="/" class="back-link">Back to Main Page</a>
+    </div>
+</body>
+</html>
